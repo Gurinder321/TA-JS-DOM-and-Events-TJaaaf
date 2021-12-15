@@ -11,67 +11,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>🤯 Calculator 🤩</h1>
-    <!DOCTYPE html>
-    <html lang="en" dir="ltr">
-      <head>
-        <meta charset="utf-8" />
-        <title>Simple Calculator using HTML, CSS and JavaScript</title>
-        <link rel="stylesheet" href="styles.css" />
-      </head>
-      <body>
-        <table class="calculator">
-          <tr>
-            <td colspan="3"><input class="display-box" type="text" id="result" disabled /></td>
-            <!-- clearScreen() function clear all the values -->
-            <td>
-              <input
-                class="button"
-                type="button"
-                value="C"
-                onclick="clearScreen()"
-                style="background-color: #fb0066"
-              />
-            </td>
-          </tr>
-          <tr>
-            <!-- display() function display the value of clicked button -->
-            <td><input class="button" type="button" value="1" onclick="display('1')" /></td>
-            <td><input class="button" type="button" value="2" onclick="display('2')" /></td>
-            <td><input class="button" type="button" value="3" onclick="display('3')" /></td>
-            <td><input class="button" type="button" value="/" onclick="display('/')" /></td>
-          </tr>
-          <tr>
-            <td><input class="button" type="button" value="4" onclick="display('4')" /></td>
-            <td><input class="button" type="button" value="5" onclick="display('5')" /></td>
-            <td><input class="button" type="button" value="6" onclick="display('6')" /></td>
-            <td><input class="button" type="button" value="-" onclick="display('-')" /></td>
-          </tr>
-          <tr>
-            <td><input class="button" type="button" value="7" onclick="display('7')" /></td>
-            <td><input class="button" type="button" value="8" onclick="display('8')" /></td>
-            <td><input class="button" type="button" value="9" onclick="display('9')" /></td>
-            <td><input class="button" type="button" value="+" onclick="display('+')" /></td>
-          </tr>
-          <tr>
-            <td><input class="button" type="button" value="." onclick="display('.')" /></td>
-            <td><input class="button" type="button" value="0" onclick="display('0')" /></td>
-            <!-- calculate() function evaluate the mathematical expression -->
-            <td>
-              <input
-                class="button"
-                type="button"
-                value="="
-                onclick="calculate()"
-                style="background-color: #fb0066"
-              />
-            </td>
-            <td><input class="button" type="button" value="*" onclick="display('*')" /></td>
-          </tr>
-        </table>
-        <script type="text/javascript" src="script.js"></script>
-      </body>
-    </html>
+    <h1 class="heading">🤯 Calculator 🤩</h1>
+    <section class="display">12</section>
+    <div class="grid-container">
+      <button class="clear">C</button>
+      <button class="divide">/</button>
+      <button class="multiply">*</button>
+      <button class="backspace">&larr;</button>
+      <button class="seven">7</button>
+      <button class="eight">8</button>
+      <button class="nine">9</button>
+      <button class="minus">-</button>
+      <button class="four">4</button>
+      <button class="five">5</button>
+      <button class="six">6</button>
+      <button class="plus">+</button>
+      <button class="one">1</button>
+      <button class="two">2</button>
+      <button class="three">3</button>
+      <button class="dot">.</button>
+      <button class="bracket-l">(</button>
+      <button class="zero">0</button>
+      <button class="bracket-r">)</button>
+      <button id="equal" class="equal">=</button>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
