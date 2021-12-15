@@ -1,0 +1,26 @@
+.heading {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.display {
+  background-color: black;
+  color: white;
+  padding: 1.2rem;
+  font-size: 2rem;
+  text-align: right;
+  border-radius: 10px;
+  font-weight: 800;
+}
+button {
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+}
