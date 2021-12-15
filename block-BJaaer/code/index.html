@@ -11,7 +11,7 @@
       <form class="container">
         <div class="form-control">
           <label for="name">Your Name:</label>
-          <input id="name" type="text" name="text" placeholder="Enter your name" />
+          <input id="name" type="text" name="name" placeholder="Enter your name" />
         </div>
         <div class="form-control">
           <label for="email">Your Email:</label>
@@ -19,7 +19,7 @@
         </div>
         <div class="form-control">
           <label for="movies">What do you love?</label>
-          <select id="gender" name="gender">
+          <select id="choice" name="choice">
             <option value="movies">Movies</option>
             <option value="series">Series</option>
             <option value="others">Others</option>
@@ -28,7 +28,7 @@
 
         <div class="form-control">
           <label for="color">Choose a color</label>
-          <input id="color" type="color" name="email" placeholder="Enter your email" />
+          <input id="color" type="color" name="color" placeholder="Enter your email" />
         </div>
         <div class="form-control">
           <label for="range"> Rate the movie Inception out of 10 </label>
@@ -37,7 +37,7 @@
             type="range"
             max="10"
             step="1"
-            name="email"
+            name="movie"
             placeholder="Enter your email"
           />
         </div>
@@ -45,17 +45,17 @@
           <label>Book genre you love?</label>
 
           <div>
-            <input type="radio" id="fiction" name="drone" value="fiction" checked />
+            <input type="radio" id="fiction" name="book" value="fiction" checked />
             <label for="fiction">Fiction</label>
           </div>
 
           <div>
-            <input type="radio" id="non-fiction" name="drone" value="non-fiction" />
+            <input type="radio" id="non-fiction" name="book" value="non-fiction" />
             <label for="non-fiction">Non Fiction</label>
           </div>
 
           <div>
-            <input type="radio" id="adventure" name="drone" value="adventure" />
+            <input type="radio" id="adventure" name="book" value="adventure" />
             <label for="adventure">Adventure</label>
           </div>
         </div>
@@ -65,6 +65,21 @@
         </div>
         <button type="submit">Submit</button>
       </form>
+
+      <div class="modal_overlay">
+        <div class="container relative">
+          <button class="modal_close">X</button>
+          <h1>Hello Sameer</h1>
+          <p>Email: gurinderk@gmail.com</p>
+          <p>Email: gurinderk@gmail.com</p>
+          <p>Email: gurinderk@gmail.com</p>
+          <p>Email: gurinderk@gmail.com</p>
+          <p>Email: gurinderk@gmail.com</p>
+          <p>Email: gurinderk@gmail.com</p>
+          <p>Email: gurinderk@gmail.com</p>
+          <p>You agree to Terms and Conditions</p>
+        </div>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
