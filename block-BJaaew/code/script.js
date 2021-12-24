@@ -1,5 +1,6 @@
 let root = document.querySelector(".cards");
 let rootTags = document.querySelector(".tags");
+let search = document.querySelector(".search");
 
 let allPeople = got.houses.reduce((acc, cv) => {
   acc = acc.concat(cv.people);
@@ -45,5 +46,14 @@ function createTagsUI(tags = []) {
   });
 }
 
+function handleSearch(event) {
+  let searchText = event.target.value;
+  let filteredPeople = allPeople.filter((person) =>
+    person.name.toLowerCase().includes(searchText.toLowerCase())
+  );
+  createCards(filteredPeople);
+}
+
+search.addEventListener("input", handleSearch);
 createTagsUI(allTags);
 createCards(allPeople);
